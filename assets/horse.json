@@ -402,7 +402,7 @@
   ],
   "meta": {
     "app": "https://www.leshylabs.com/apps/sstool/",
-    "image": "horse.png",
+    "image": "spritesheet.png",
     "scale": 1,
     "size": {
       "h": 724,

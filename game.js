@@ -41,9 +41,16 @@ function create() {
     horse = game.add.sprite(75, 380, 'horse', 'horse');
     game.physics.enable(horse, Phaser.Physics.ARCADE);
 
+    var bendAnimFrames = Phaser.Animation.generateFrameNames('horse-bend-', 0, 3, '', 2);
+    Phaser.Animation.generateFrameNames('horse-bend-', 2, 1, '', 2).forEach(function(element) {
+        bendAnimFrames.push(element);
+    }, this);
+    
+    console.log(bendAnimFrames);
+
     horse.animations.add('run', Phaser.Animation.generateFrameNames('horse-run-', 0, 6, '', 2), 20, false);
     horse.animations.add('jump', Phaser.Animation.generateFrameNames('horse-jump-', 0, 6, '', 2), 10, false);
-    horse.animations.add('bend', Phaser.Animation.generateFrameNames('horse-bend-', 0, 3, '', 2), 10, true);
+    horse.animations.add('bend', bendAnimFrames, 3, true);
 
     horse.animations.play('bend');
 }
@@ -52,13 +59,12 @@ function create() {
  * main loop
  */
 function update() {
-    
     if (cursors.right.isDown) 
     {
         back.tilePosition.x -= 2;
         hills.tilePosition.x -= 5;
         
-        if (jumpCmd.isDown  ) // && game.time.now > jumpTimer && horse.body.onFloor()
+        if (jumpCmd.isDown) // && game.time.now > jumpTimer && horse.body.onFloor()
         {
             horse.animations.stop('run');
             horse.animations.play('jump');
@@ -72,7 +78,6 @@ function update() {
     }
     else
     {
-        horse.animations.stop();
         horse.animations.play('bend');
         //horse.animations.frame = 19;
         //horse.body.gravity.y = globalGravity;
