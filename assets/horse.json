@@ -1,0 +1,413 @@
+{
+  "frames": [
+    {
+      "filename": "horse-bend-00",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 145
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-bend-01",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 435
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-bend-02",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 193,
+        "y": 0
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-bend-03",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 193,
+        "y": 145
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-00",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 290
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-01",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 193,
+        "y": 290
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-02",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 386,
+        "y": 0
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-03",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 386,
+        "y": 145
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-04",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 386,
+        "y": 290
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-05",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-jump-06",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 193,
+        "y": 435
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-00",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 386,
+        "y": 435
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-01",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 580
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-02",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 193,
+        "y": 580
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-03",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 386,
+        "y": 580
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-04",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 579,
+        "y": 0
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-05",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 579,
+        "y": 145
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse-run-06",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 579,
+        "y": 290
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    },
+    {
+      "filename": "horse",
+      "frame": {
+        "h": 144,
+        "w": 192,
+        "x": 579,
+        "y": 435
+      },
+      "rotated": false,
+      "sourceSize": {
+        "h": 144,
+        "w": 192
+      },
+      "spriteSourceSize": {
+        "h": 144,
+        "w": 192,
+        "x": 0,
+        "y": 0
+      },
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "app": "https://www.leshylabs.com/apps/sstool/",
+    "image": "horse.png",
+    "scale": 1,
+    "size": {
+      "h": 724,
+      "w": 771
+    },
+    "version": "Leshy SpriteSheet Tool v0.8.4"
+  }
+}
