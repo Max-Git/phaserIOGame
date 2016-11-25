@@ -10,6 +10,9 @@ var horse;
 var back;
 var hills;
 var grass;
+var cloud;
+var clouds;
+var currentCloud;
 var jumpTimer = 0;
 var globalGravity = 9;
 var isJumping = false;
@@ -28,6 +31,7 @@ function preload() {
     game.load.image('grass', 'assets/backgrounds/tile_grass.png');
 
     game.load.atlas('horse', 'assets/horse.png', 'assets/horse.json');
+    game.load.atlas('clouds', 'assets/sprites/clouds.png', 'assets/sprites/clouds.json');
 }
 
 /**
@@ -41,9 +45,12 @@ function create() {
     back = game.add.tileSprite(0, 0, 2048, 640, 'background');
     hills = game.add.tileSprite(0, 160, 2048, 384, 'hills');
     grass = game.add.tileSprite(0, 384, 2048, 128, 'grass');
-
+    
     horse = game.add.sprite(75, 284, 'horse', 'horse');
+
     game.physics.enable(horse, Phaser.Physics.ARCADE);
+    clouds = game.add.physicsGroup(Phaser.Physics.ARCADE);
+
     horse.body.bounce.y = 0.3;
 
     var bendAnimFrames = Phaser.Animation.generateFrameNames('horse-bend-', 0, 3, '', 2);
@@ -51,19 +58,20 @@ function create() {
         bendAnimFrames.push(element);
     }, this);
     
-    console.log(bendAnimFrames);
-
     horse.animations.add('run', Phaser.Animation.generateFrameNames('horse-run-', 0, 6, '', 2), 20, false);
     horse.animations.add('jump', Phaser.Animation.generateFrameNames('horse-jump-', 0, 6, '', 2), 10, true);
     horse.animations.add('bend', bendAnimFrames, 3, true);
 
     horse.animations.play('bend');
+
+    currentCloud = newCloud();
 }
 
 /**
  * main loop
  */
 function update() {
+    currentCloud.body.x -= 1;
 
     if (horse.y <= 270)
     {
@@ -81,7 +89,8 @@ function update() {
         back.tilePosition.x -= 1;
         hills.tilePosition.x -= 3;
         grass.tilePosition.x -= 6;
-        
+        currentCloud.body.x -= 2;
+
         if (jumpCmd.isDown && !isJumping) 
         {
             horse.animations.stop('run');
@@ -101,4 +110,20 @@ function update() {
     {
         horse.animations.play('bend');
     }
+}
+
+function newCloud() {
+    var cloudName = 'cloud-'+game.rnd.integerInRange(0, 2);
+    var aCloud = clouds.create(1850, game.rnd.integerInRange(40, 50), 'clouds', cloudName);
+    aCloud.body.collideWorldBounds=true;
+
+    aCloud.body.onWorldBounds = new Phaser.Signal();
+    aCloud.body.onWorldBounds.add(CreateNewCloud, this);
+
+    return aCloud;
+}
+
+function CreateNewCloud(aCloud){
+    aCloud.kill();
+    currentCloud = newCloud();
 }
