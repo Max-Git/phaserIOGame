@@ -1,12 +1,7 @@
 // variables
 var cursors;
 var jumpCmd;
-var horse;
-var back;
-var hills;
-var grass;
-var cloud;
-var clouds;
+
 var jumpTimer = 0;
 var globalGravity = 9;
 var isJumping = false;
@@ -21,21 +16,13 @@ var playState = {
         game.scale.maxWidth = 2048;
         game.scale.maxHeight = 640;
         game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-
-        // chargement des resources 
-        game.load.image('background', 'assets/backgrounds/scroll_bg_far.png');
-        game.load.image('hills', 'assets/backgrounds/hills-scroll.png');
-        game.load.image('grass', 'assets/backgrounds/tile_grass.png');
-
-        game.load.atlas('horse', 'assets/sprites/horse.png', 'assets/sprites/horse.json');
-        game.load.atlas('clouds', 'assets/sprites/clouds.png', 'assets/sprites/clouds.json');
     },
 
     /**
      * Adding elements to the game
      */
     create : function () {
-        game.physics.startSystem(Phaser.Physics.ARCADE);
+        
         cursors = game.input.keyboard.createCursorKeys();
         jumpCmd = this.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
 
